@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d6a9b313-b41e-46c4-b4e6-467f02a7cb05" name="Default Changelist" comment="" />
+    <list default="true" id="d6a9b313-b41e-46c4-b4e6-467f02a7cb05" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Components/Layout/HoC/main.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/context/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/_app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/theme/dark.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/theme/light.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1uDW51DkdAvez4RM8bEivZNQ6du" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -18,6 +33,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\disk_\Documents\rest-countries-api-with-color-theme-switcher-master\node_modules\prettier" />
+    <property name="ts.external.directory.path" value="C:\Users\disk_\Documents\rest-countries-api-with-color-theme-switcher-master\node_modules\typescript\lib" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -29,11 +45,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1624200452171</updated>
-      <workItem from="1624200453947" duration="79000" />
+      <workItem from="1624200453947" duration="5266000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="738" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1624204338487">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="738" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1624204338487" />
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1624201581278">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1624201581278" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1624202210907">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1624202210907" />
   </component>
 </project>
