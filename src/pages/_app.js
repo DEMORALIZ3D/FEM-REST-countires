@@ -36,11 +36,9 @@ function Application({ Component, pageProps }) {
           dispatch,
         }}
       >
-        <ThemeProvider theme={state.theme === "light" ? lightTheme : darkTheme}>
           <MainHoC>
             <Component {...pageProps} />
           </MainHoC>
-        </ThemeProvider>
       </stateContext.Provider>
     </>
   );

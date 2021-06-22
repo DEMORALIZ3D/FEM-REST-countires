@@ -2,16 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6a9b313-b41e-46c4-b4e6-467f02a7cb05" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/Layout/HoC/main.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/_app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/theme/dark.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/theme/light.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/CountryCard/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CountryCard/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/CountryCard/styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CountryCard/styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Filter/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Filter/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Filter/styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Filter/styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Layout/Header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Layout/Header/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Layout/Header/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Layout/Header/styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Layout/HoC/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Layout/HoC/main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Search/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Search/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Search/styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Search/styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme/dark.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/dark.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme/light.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/light.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,16 +35,25 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\disk_\Documents\rest-countries-api-with-color-theme-switcher-master\node_modules\prettier" />
-    <property name="ts.external.directory.path" value="C:\Users\disk_\Documents\rest-countries-api-with-color-theme-switcher-master\node_modules\typescript\lib" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\aaron.harper-mayo\AppData\Roaming\npm\node_modules\prettier" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
+    <property name="ts.external.directory.path" value="C:\code\challenge\FEM-REST-COUNTRIES\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\code\challenge\FEM-REST-COUNTRIES\src\Components\Search" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -46,24 +65,17 @@
       <option name="presentableId" value="Default" />
       <updated>1624200452171</updated>
       <workItem from="1624200453947" duration="5266000" />
+      <workItem from="1624288187274" duration="4618000" />
+      <workItem from="1624346433071" duration="6486000" />
+      <workItem from="1624355163592" duration="5152000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="738" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1624204338487">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="738" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1624204338487" />
-    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1624201581278">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1624201581278" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1624202210907">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1624202210907" />
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

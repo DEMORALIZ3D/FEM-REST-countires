@@ -1,30 +1,53 @@
-import * as React from 'react';
-import {Global, useTheme} from "@emotion/react";
+import * as React from "react";
+import { css, Global, ThemeProvider, useTheme } from "@emotion/react";
+import Header from "../Header";
+import { lightTheme } from "../../../theme/light";
+import { darkTheme } from "../../../theme/dark";
+import { stateContext } from "../../../context";
 
-declare module '@emotion/react' {
-    export interface Theme {
-        layout: {
-            background: string;
-        };
-    }
+declare module "@emotion/react" {
+  export interface Theme {
+    layout: {
+      background: {
+        primary: string;
+        secondary: string;
+      };
+      color: string;
+      border: string;
+    };
+  }
 }
 
 export const MainHoC: React.FC<{
-    children: React.ReactNode
+  children: React.ReactNode;
 }> = ({ children }) => {
-    const theme = useTheme();
+  const { state } = React.useContext(stateContext);
 
+  const GlobalStyles = () => {
+    const theme = useTheme();
     return (
-        <div>
-            <Global
-                styles={{
-                    body: {
-                        background: theme.layout.background,
-                        fontFamily: "'Nunito', sans-serif",
-                    },
-                }}
-            />
-            {children}
-        </div>
-    )
-}
+      <Global
+        styles={css`
+          body {
+            background: ${theme.layout.background.primary};
+            color: ${theme.layout.color};
+          }
+
+          .pointer {
+            cursor: pointer;
+          }
+        `}
+      />
+    );
+  };
+
+  return (
+    <>
+      <ThemeProvider theme={state.theme === "light" ? lightTheme : darkTheme}>
+        <Header />
+        <div className="mx-3 px-5">{children}</div>
+        <GlobalStyles />
+      </ThemeProvider>
+    </>
+  );
+};
