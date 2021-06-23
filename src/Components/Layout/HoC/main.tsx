@@ -3,7 +3,7 @@ import { css, Global, ThemeProvider, useTheme } from "@emotion/react";
 import Header from "../Header";
 import { lightTheme } from "../../../theme/light";
 import { darkTheme } from "../../../theme/dark";
-import { stateContext } from "../../../context";
+import { stateContext, updateTheme } from "../../../context";
 
 declare module "@emotion/react" {
   export interface Theme {
@@ -22,7 +22,7 @@ declare module "@emotion/react" {
 export const MainHoC: React.FC<{
   children: React.ReactNode;
 }> = ({ children }) => {
-  const { state } = React.useContext(stateContext);
+  const { state, dispatch } = React.useContext(stateContext);
 
   const GlobalStyles = () => {
     const theme = useTheme();
@@ -41,6 +41,15 @@ export const MainHoC: React.FC<{
       />
     );
   };
+
+  React.useEffect(() => {
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      dispatch(updateTheme("dark"));
+    }
+  }, []);
 
   return (
     <>

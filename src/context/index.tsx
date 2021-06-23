@@ -1,8 +1,8 @@
 import * as React from "react";
 
 export const initialState = {
-  theme: "dark",
-  pageTitle: "Country checker",
+  theme: "light",
+  pageTitle: "Where in the world",
 };
 
 export const updateTheme = (theme: "light" | "dark") => {
@@ -23,7 +23,6 @@ export const reducer = (state, action) => {
       return {
         ...state,
         theme: action.payload,
-        pageTitle: action.payload,
       };
     default:
       return state;

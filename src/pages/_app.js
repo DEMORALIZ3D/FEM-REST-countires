@@ -9,7 +9,6 @@ import { MainHoC } from "../Components/Layout/HoC/main";
 
 function Application({ Component, pageProps }) {
   const [state, dispatch] = React.useReducer(reducer, initialState);
-  console.log("state", state);
   return (
     <>
       <Head>
@@ -36,9 +35,9 @@ function Application({ Component, pageProps }) {
           dispatch,
         }}
       >
-          <MainHoC>
-            <Component {...pageProps} />
-          </MainHoC>
+        <MainHoC>
+          <Component {...pageProps} />
+        </MainHoC>
       </stateContext.Provider>
     </>
   );
