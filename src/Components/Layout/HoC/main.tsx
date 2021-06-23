@@ -46,7 +46,7 @@ export const MainHoC: React.FC<{
     <>
       <ThemeProvider theme={state.theme === "light" ? lightTheme : darkTheme}>
         <Header />
-        <div className="mx-3 px-5">{children}</div>
+        <div className="mx-3 px-1 px-lg-5">{children}</div>
         <GlobalStyles />
       </ThemeProvider>
     </>

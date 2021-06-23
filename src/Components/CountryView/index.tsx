@@ -9,7 +9,7 @@ const CountryView: React.FC<{
 }> = ({ selectedCountry, setSelected, countries }) => {
   return (
     <CountryViewWrapper flag={selectedCountry.flag}>
-      <div className="d-flex my-5">
+      <div className="d-flex my-3 my-lg-5">
         <div>
           <button className="d-flex" onClick={() => setSelected("")}>
             <span className="material-icons me-3">arrow_back</span>
@@ -17,15 +17,15 @@ const CountryView: React.FC<{
           </button>
         </div>
       </div>
-      <div className="row w-100">
+      <div className="row g-0 g-lg-3 w-100">
         <div className="col-12 col-lg-6">
           <div className="flag" />
         </div>
-        <div className="col-12 col-lg-6">
+        <div className="col-12 col-lg-6 mt-4 mt-lg-0">
           <h2 className="mb-4">{selectedCountry.name}</h2>
           <div className="d-flex flex-wrap">
             <div className="">
-              <ul>
+              <ul className="mb-0 mb-lg-3">
                 <li>
                   <strong className="me-3">Native Name:</strong>
                   {selectedCountry.nativeName}
@@ -48,7 +48,7 @@ const CountryView: React.FC<{
                 </li>
               </ul>
             </div>
-            <div className="ms-5">
+            <div className="ms-0 ms-lg-5">
               <ul>
                 <li>
                   <strong className="me-3">Top Level Domain:</strong>
@@ -70,7 +70,7 @@ const CountryView: React.FC<{
             </div>
           </div>
           {selectedCountry.borders.length !== 0 && (
-            <div className="mt-5">
+            <div className="my-4 my-lg-5">
               <h5 className="me-3 mb-3">Border Countries:</h5>
               <div className="border-countries d-flex flex-wrap px-2">
                 {selectedCountry.borders.map((borderCode) => {

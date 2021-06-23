@@ -8,7 +8,8 @@ export const SearchWrapper = styled.div<{
       background: ${props.theme.layout.background.secondary};
       padding-left: 15px;
       border-radius: 10px;
-      width: 500px;
+      max-width: 500px;
+      min-width: 150px;
       border: 6px solid ${props.theme.layout.border};
       user-select: none;
       
@@ -38,6 +39,10 @@ export const SearchWrapper = styled.div<{
       input::placeholder {
         font-weight: 600;
         color: ${props.theme.layout.placeholder};
+      }
+      
+      @media only screen and (max-width: 600px) {
+          width: 100%;
       }
   `}
 `;

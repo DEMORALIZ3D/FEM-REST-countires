@@ -9,7 +9,6 @@ export const CountryCardWrapper = styled.div<{
   ${(props) => `
     width: 100%;
     background: ${props.theme.layout.background.secondary};
-    margin-bottom: 25px;
     border-radius: 15px;
     overflow: hidden;
     border: 6px solid ${props.theme.layout.border};

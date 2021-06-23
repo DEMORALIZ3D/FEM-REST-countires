@@ -42,15 +42,15 @@ const Index: React.FC<{
     <div>
       {form.selected === "" ? (
         <div>
-          <div className="d-flex my-5">
-            <div>
+          <div className="d-flex row my-3 my-lg-5">
+            <div className="col-12 col-lg-6">
               <Search value={form.search} callback={searchCallback} />
             </div>
-            <div className="d-flex flex-grow-1 justify-content-end">
+            <div className="col-12 col-lg-6 d-flex flex-grow-1 justify-content-start justify-content-lg-end mt-3 mt-lg-0">
               <Filter value={form.filter} callback={filterCallback} />
             </div>
           </div>
-          <div className="row w-100">
+          <div className="row g-0 g-lg-4 w-100">
             {countries &&
               countries
                 .filter((country) => {
@@ -70,7 +70,7 @@ const Index: React.FC<{
                   return country;
                 })
                 .map((country) => (
-                  <div className="col-3 d-flex flex-column">
+                  <div className="col-12 col-sm-6 col-lg-4 col-xl-3 d-flex flex-column mx-0 mb-4 mb-lg-0">
                     <CountryCard
                       country={country}
                       selected={country.name === form.selected}
