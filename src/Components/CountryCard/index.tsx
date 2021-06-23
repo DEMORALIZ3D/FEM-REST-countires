@@ -4,10 +4,13 @@ import { CountryCardWrapper } from "./styles";
 
 const CountryCard: React.FC<{
   country: Country;
-}> = ({ country }) => {
+  selected: boolean;
+  setSelected: (name: string) => void;
+}> = ({ country, selected, setSelected }) => {
   return (
     <CountryCardWrapper
       flag={country.flag}
+      selected={selected}
       className="d-flex flex-column flex-grow-1"
     >
       <div>
@@ -27,7 +30,11 @@ const CountryCard: React.FC<{
           </p>
         </div>
         <div className="d-flex flex-grow-1 justify-content-end align-items-end">
-          <span className="material-icons pointer" title="open to read more">
+          <span
+            className="material-icons pointer"
+            title="open to read more"
+            onClick={() => setSelected(country.name)}
+          >
             arrow_forward
           </span>
         </div>

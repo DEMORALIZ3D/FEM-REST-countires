@@ -14,7 +14,7 @@ export const SearchWrapper = styled.div<{
       
       .search-icon {
         margin: 10px 0;
-        color: rgba(0, 0, 0, 0.3);
+        color: ${props.theme.layout.placeholder};
       }
       
       &:focus {
@@ -37,7 +37,7 @@ export const SearchWrapper = styled.div<{
       
       input::placeholder {
         font-weight: 600;
-        color: rgba(0, 0, 0, 0.3);
+        color: ${props.theme.layout.placeholder};
       }
   `}
 `;

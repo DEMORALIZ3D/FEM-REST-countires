@@ -3,6 +3,7 @@ import { Theme } from "@emotion/react";
 
 export const CountryCardWrapper = styled.div<{
   theme?: Theme;
+  selected: boolean;
   flag: string;
 }>`
   ${(props) => `

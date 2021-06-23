@@ -5,6 +5,7 @@ import Filter from "../Components/Filter";
 import axios from "axios";
 import CountryCard from "../Components/CountryCard";
 import { Country } from "../lib/types";
+import CountryView from "../Components/CountryView";
 
 const Index: React.FC<{
   countries: Country[];
@@ -12,9 +13,11 @@ const Index: React.FC<{
   const [form, setForm] = React.useState({
     search: "",
     filter: "",
+    selected: "",
   });
-  // const [countries, setCountries] = React.useState(null);
-
+  const selectedCountry = countries.find(
+    (country) => country.name === form.selected
+  );
   const searchCallback = (query) => {
     return setForm((prev) => ({
       ...prev,
@@ -29,41 +32,63 @@ const Index: React.FC<{
     }));
   };
 
+  const setSelected = (selected) => {
+    return setForm((prev) => ({
+      ...prev,
+      selected,
+    }));
+  };
   return (
     <div>
-      <div className="d-flex my-5">
+      {form.selected === "" ? (
         <div>
-          <Search value={form.search} callback={searchCallback} />
-        </div>
-        <div className="d-flex flex-grow-1 justify-content-end">
-          <Filter value={form.filter} callback={filterCallback} />
-        </div>
-      </div>
-      <div className="row w-100">
-        {countries &&
-          countries
-            .filter((country) => {
-              if (form.search) {
-                return country.name
-                  .toLowerCase()
-                  .includes(form.search.toLowerCase());
-              }
+          <div className="d-flex my-5">
+            <div>
+              <Search value={form.search} callback={searchCallback} />
+            </div>
+            <div className="d-flex flex-grow-1 justify-content-end">
+              <Filter value={form.filter} callback={filterCallback} />
+            </div>
+          </div>
+          <div className="row w-100">
+            {countries &&
+              countries
+                .filter((country) => {
+                  if (form.search) {
+                    return country.name
+                      .toLowerCase()
+                      .includes(form.search.toLowerCase());
+                  }
 
-              return country;
-            })
-            .filter((country) => {
-              if (form.filter) {
-                return country.region === form.filter;
-              }
+                  return country;
+                })
+                .filter((country) => {
+                  if (form.filter) {
+                    return country.region === form.filter;
+                  }
 
-              return country;
-            })
-            .map((country) => (
-              <div className="col-3 d-flex flex-column">
-                <CountryCard country={country} />
-              </div>
-            ))}
-      </div>
+                  return country;
+                })
+                .map((country) => (
+                  <div className="col-3 d-flex flex-column">
+                    <CountryCard
+                      country={country}
+                      selected={country.name === form.selected}
+                      setSelected={setSelected}
+                    />
+                  </div>
+                ))}
+          </div>
+        </div>
+      ) : (
+        <div>
+          <CountryView
+            selectedCountry={selectedCountry}
+            setSelected={setSelected}
+            countries={countries}
+          />
+        </div>
+      )}
     </div>
   );
 };
