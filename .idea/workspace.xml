@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6a9b313-b41e-46c4-b4e6-467f02a7cb05" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/CountryView/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/CountryView/styles.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/CountryCard/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CountryCard/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/CountryCard/styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CountryCard/styles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Layout/HoC/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Layout/HoC/main.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Search/styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Search/styles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/dark.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/dark.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/light.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/light.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/CountryView/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CountryView/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/CountryView/styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CountryView/styles.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +53,7 @@
       <workItem from="1624346433071" duration="6486000" />
       <workItem from="1624355163592" duration="5811000" />
       <workItem from="1624372664511" duration="4894000" />
+      <workItem from="1624444858774" duration="1195000" />
     </task>
     <servers />
   </component>

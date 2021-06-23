@@ -69,18 +69,23 @@ const CountryView: React.FC<{
               </ul>
             </div>
           </div>
-          <div className="d-flex mt-5">
-            <h5 className="me-3 mb-0">Border Countries:</h5>
-            <div>
-              {selectedCountry.borders
-                .map((borderCode) => {
-                  return countries.find(
+          {selectedCountry.borders.length !== 0 && (
+            <div className="mt-5">
+              <h5 className="me-3 mb-3">Border Countries:</h5>
+              <div className="border-countries d-flex flex-wrap px-2">
+                {selectedCountry.borders.map((borderCode) => {
+                  const borderCountry = countries.find(
                     (country) => country.alpha3Code === borderCode
                   ).name;
-                })
-                .join(", ")}
+                  return (
+                    <div className="border-country me-2 my-2">
+                      {borderCountry}
+                    </div>
+                  );
+                })}
+              </div>
             </div>
-          </div>
+          )}
         </div>
       </div>
     </CountryViewWrapper>
