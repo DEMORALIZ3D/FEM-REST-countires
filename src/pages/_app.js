@@ -9,7 +9,6 @@ function Application({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <html lang="en" />
         <title>{state.pageTitle}</title>
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
