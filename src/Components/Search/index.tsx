@@ -11,6 +11,9 @@ const Search: React.FC<{
       <input
         placeholder="Search for a country..."
         value={value}
+        name="search-input"
+        aria-label="Search for a country"
+        title="Type a country to be able to search for it"
         onChange={(evt) => callback(evt.target.value)}
       />
       {value && (

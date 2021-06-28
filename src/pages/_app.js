@@ -1,10 +1,7 @@
 import * as React from "react";
 import { initialState, reducer } from "../context";
 import Head from "next/head";
-import { ThemeProvider, useTheme } from "@emotion/react";
 import { stateContext } from "../context";
-import { lightTheme } from "../theme/light";
-import { darkTheme } from "../theme/dark";
 import { MainHoC } from "../Components/Layout/HoC/main";
 
 function Application({ Component, pageProps }) {
@@ -12,6 +9,7 @@ function Application({ Component, pageProps }) {
   return (
     <>
       <Head>
+        <html lang="en" />
         <title>{state.pageTitle}</title>
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
@@ -19,7 +17,7 @@ function Application({ Component, pageProps }) {
           integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
           crossOrigin="anonymous"
         />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link rel="preconnect" lang="en" href="https://fonts.gstatic.com" />
         <link
           href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;800&display=swap"
           rel="stylesheet"
