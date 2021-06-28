@@ -17,18 +17,18 @@ const Header: React.FC = () => {
           <h3 className="mb-0">Where in the world?</h3>
         </div>
         <div
-          className="d-flex flex-grow-1 align-items-center justify-content-end"
+          className="d-flex flex-grow-1 align-items-center justify-content-end pointer"
           onClick={themeToggle}
         >
-          <h5 className="mb-0">
-            {state.theme !== "light" ? "Light Mode" : "Dark Mode"}
-          </h5>
           <span
-            className="material-icons pointer ms-2 ms-lg-3"
+            className="material-icons  me-2 me-lg-3"
             title={`Set ${state.theme !== "light" ? "Light" : "Dark"} Mode`}
           >
             {state.theme !== "light" ? "light_mode" : "dark_mode"}
           </span>
+          <h5 className="mb-0">
+            {state.theme !== "light" ? "Light Mode" : "Dark Mode"}
+          </h5>
         </div>
       </HeaderWrapper>
     </div>

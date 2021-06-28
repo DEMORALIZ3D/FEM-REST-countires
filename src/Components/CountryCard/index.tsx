@@ -17,12 +17,12 @@ const CountryCard: React.FC<{
         <div className="country-flag" />
       </div>
       <div className="p-3 d-flex flex-grow-1 flex-column">
-        <h4 className="mb-4">{country.name}</h4>
+        <h4 className="mb-4 fw-bold">{country.name}</h4>
         <div className="info-area">
-          <p>
+          <p className="mb-1">
             <strong>Population</strong>: {country.population}
           </p>
-          <p>
+          <p className="mb-1">
             <strong>Region</strong>: {country.region}
           </p>
           <p>

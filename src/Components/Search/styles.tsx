@@ -26,7 +26,7 @@ export const SearchWrapper = styled.div<{
         background: none;
         border: none;
         width: 100%;
-        min-height: 42px;
+        min-height: 52px;
         color: ${props.theme.layout.color};
         font-weight: 600;
         padding: 0 10px;

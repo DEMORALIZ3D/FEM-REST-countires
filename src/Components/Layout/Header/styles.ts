@@ -5,7 +5,7 @@ export const HeaderWrapper = styled.div<{
   theme?: Theme;
 }>`
   background: ${(props) => props.theme.layout.background.secondary};
-  padding: 15px 25px;
+  padding: 25px;
   box-shadow: 1px -20px 20px 17px rgba(26, 26, 26, 0.45);
 
   @media only screen and (max-width: 600px) {

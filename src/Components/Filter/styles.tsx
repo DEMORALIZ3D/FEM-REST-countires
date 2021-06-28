@@ -18,6 +18,7 @@ export const FilterWrapper = styled.div<{
         background: ${props.theme.layout.background.secondary};
         padding: 10px;
         border-radius: 5px;
+        min-height: 52px;
       }
       
       .dropdown {

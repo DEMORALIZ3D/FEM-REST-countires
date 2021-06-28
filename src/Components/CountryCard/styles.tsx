@@ -15,7 +15,7 @@ export const CountryCardWrapper = styled.div<{
     
     .country-flag {
         background: url(${props.flag}) no-repeat center center / cover;
-        height: 300px;
+        height: 200px;
         width: 100%;
     }
     
