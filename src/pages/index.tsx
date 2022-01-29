@@ -1,5 +1,4 @@
 import * as React from "react";
-import { initialState, reducer } from "../context";
 import Search from "../Components/Search";
 import Filter from "../Components/Filter";
 import axios from "axios";
@@ -57,7 +56,7 @@ const Index: React.FC<{
                   if (form.search) {
                     return country.name
                       .toLowerCase()
-                      .includes(form.search.toLowerCase());
+                      .includes((form.search as string).toLowerCase());
                   }
 
                   return country;
@@ -94,10 +93,9 @@ const Index: React.FC<{
 };
 
 export async function getStaticProps() {
-  const countries = await axios("https://restcountries.eu/rest/v2/all", {
+  const countries = await axios("https://restcountries.com/v2/all", {
     method: "GET",
   });
-
   return {
     props: {
       countries: countries.data,
