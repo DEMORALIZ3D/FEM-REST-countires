@@ -2,7 +2,7 @@ import * as React from "react";
 
 export const initialState = {
   theme: "light",
-  pageTitle: "Where in the world",
+  pageTitle: "Where in the world...",
 };
 
 export const updateTheme = (theme: "light" | "dark") => {
